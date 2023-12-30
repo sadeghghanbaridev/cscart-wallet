@@ -1,0 +1,677 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::pdrmgh_cscart_wallet"
+msgid "Wallet System"
+msgstr "Wallet System"
+
+msgctxt "Languages::wk_webkul_user_guide_content"
+msgid "Congratulation!! <b>\"[addon_name]\"</b> Add-on is succesfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+msgstr "Congratulation!! <b>\"[addon_name]\"</b> Add-on is succesfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "English"
+
+msgctxt "Addons::description::pdrmgh_cscart_wallet"
+msgid "Adds a built-in wallet system in your store"
+msgstr "Adds a built-in wallet system in your store"
+
+msgctxt "Languages::wallet"
+msgid "Wallet"
+msgstr "Wallet"
+
+msgctxt "Languages::pdrmgh_cscart_wallet"
+msgid "Wallet System"
+msgstr "Wallet System"
+
+msgctxt "Languages::users_search"
+msgid "users search"
+msgstr "users search"
+
+msgctxt "Languages::pdrmgh_cscart_wallet_menu_description"
+msgid "View Wallet Users & Transactions Here."
+msgstr "View Wallet Users & Transactions Here."
+
+msgctxt "SettingsSections::pdrmgh_cscart_wallet::wallet_refund_limit"
+msgid "Wallet Refund Configuration"
+msgstr "Wallet Refund Configuration"
+
+msgctxt "SettingsSections::pdrmgh_cscart_wallet::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsSections::pdrmgh_cscart_wallet::wallet_transfer"
+msgid "Wallet Transfer Configuration"
+msgstr "Wallet Transfer Configuration"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::min_refund_amount"
+msgid "Minimum amount for Refund"
+msgstr "Minimum amount for Refund"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::max_refund_amount"
+msgid "Maximum amount for Refund"
+msgstr "Maximum amount for Refund"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::min_transfer_amount"
+msgid "Minimum amount for Transfer"
+msgstr "Minimum amount for Transfer"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::max_transfer_amount"
+msgid "Maximum amount for Transfer"
+msgstr "Maximum amount for Transfer"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::status_wallet_transfer"
+msgid "Transfer"
+msgstr "Transfer"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::wallet_user_transfer_header"
+msgid "Configuration"
+msgstr "Configuration"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::wallet_user_refund_header"
+msgid "Configuration"
+msgstr "Configuration"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::wallet_user_recharge_header"
+msgid "Configuration"
+msgstr "Configuration"
+
+msgctxt "SettingsSections::pdrmgh_cscart_wallet::wallet_recharge_limit"
+msgid "Wallet Recharge Configuration"
+msgstr "Wallet Recharge Configuration"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::min_recharge_amount"
+msgid "Minimum amount for Wallet Recharge"
+msgstr "Minimum amount for Wallet Recharge"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::max_recharge_amount"
+msgid "Maximum amount for Wallet Recharge"
+msgstr "Maximum amount for Wallet Recharge"
+
+msgctxt "Languages::wallet_refund"
+msgid "Wallet Refund"
+msgstr "Wallet Refund"
+
+msgctxt "Languages::refund_already_initiated"
+msgid "Wallet Refund already initiated"
+msgstr "Wallet Refund already initiated"
+
+msgctxt "Languages::wallet_error"
+msgid "Wallet Error"
+msgstr "Wallet Error"
+
+msgctxt "Languages::credit_source"
+msgid "Credit Type"
+msgstr "Credit Type"
+
+msgctxt "Languages::wallet_limit"
+msgid "Wallet Limit"
+msgstr "Wallet Limit"
+
+msgctxt "Languages::can_not_add_money_in_wallet_please_check_refund_limit_in_addon_setting"
+msgid "Sorry,can not add money in wallet ,please check refund limit in wallet system addon setting"
+msgstr "Sorry,can not add money in wallet ,please check refund limit in wallet system addon setting"
+
+msgctxt "Languages::wallet_limit_is"
+msgid "Wallet limit is "
+msgstr "Wallet limit is "
+
+msgctxt "Languages::_to_"
+msgid " To "
+msgstr " To "
+
+msgctxt "Languages::amount_has_been_refunded_in_user_wallet"
+msgid "Amount has been refunded in user Wallet"
+msgstr "Amount has been refunded in user Wallet"
+
+msgctxt "Languages::error"
+msgid "Error"
+msgstr "Error"
+
+msgctxt "Languages::success"
+msgid "Success"
+msgstr "Success"
+
+msgctxt "Languages::enter_email_address"
+msgid "Enter Payee E-mail Address"
+msgstr "Enter Payee E-mail Address"
+
+msgctxt "Languages::remove_gift_certificate_first"
+msgid "Please remove first gift certificate From Cart"
+msgstr "Please remove first gift certificate From Cart"
+
+msgctxt "Languages::my_wallet_details"
+msgid "My Wallet Details"
+msgstr "My Wallet Details"
+
+msgctxt "Languages::wallet_recharge"
+msgid "Wallet Recharge"
+msgstr "Wallet Recharge"
+
+msgctxt "Languages::please_login_first"
+msgid "Please Login First"
+msgstr "Please Login First"
+
+msgctxt "Languages::remove_product_from_cart"
+msgid "Please remove all products from cart"
+msgstr "Please remove all products from cart"
+
+msgctxt "Languages::money_added_in_cart_please_make_a_paymnet"
+msgid "Amount added in cart"
+msgstr "Amount added in cart"
+
+msgctxt "Languages::clear_cart_successfully"
+msgid "cart cleared successfully"
+msgstr "cart cleared successfully"
+
+msgctxt "Languages::money_added_in_user_wallet"
+msgid "money added in user wallet successfully"
+msgstr "money added in user wallet successfully"
+
+msgctxt "Languages::order_has_been_saved_for_admin_review_money_will_be_added_wallet_after_admin_approval"
+msgid "Order has been saved for admin review , Money will be added wallet after store admin approval"
+msgstr "Order has been saved for admin review , Money will be added wallet after store admin approval"
+
+msgctxt "Languages::wallet_recharge_with_products_not_accepted"
+msgid "Wallet recharge with products not accepted , please clear cart first"
+msgstr "Wallet recharge with products not accepted , please clear cart first"
+
+msgctxt "Languages::wallet_credit_details"
+msgid "Wallet Update"
+msgstr "Wallet Update"
+
+msgctxt "Languages::wallet_debit_details"
+msgid "Wallet Update"
+msgstr "Wallet Update"
+
+msgctxt "Languages::dear"
+msgid "Dear "
+msgstr "Dear "
+
+msgctxt "Languages::transfer_amount_is_more_than_available_cash"
+msgid "Transfer amount is more than available cash"
+msgstr "Transfer amount is more than available cash"
+
+msgctxt "Languages::your_wallet_debited_with_amount"
+msgid "Wallet is debited with amount "
+msgstr "Wallet is debited with amount "
+
+msgctxt "Languages::regardeing_order_no"
+msgid " regarding order no "
+msgstr " regarding order no "
+
+msgctxt "Languages::debit_wallet_amount"
+msgid "Debited Wallet Amount "
+msgstr "Debited Wallet Amount "
+
+msgctxt "Languages::total_wallet_amount"
+msgid "Total Wallet Amount "
+msgstr "Total Wallet Amount "
+
+msgctxt "Languages::refund"
+msgid "Refund"
+msgstr "Refund"
+
+msgctxt "Languages::recharge"
+msgid "Recharge"
+msgstr "Recharge"
+
+msgctxt "Languages::credit_wallet_amount"
+msgid "Credited Wallet Amount"
+msgstr "Credited Wallet Amount"
+
+msgctxt "Languages::money_has_been_refunded_in_wallet"
+msgid "money refunded in wallet"
+msgstr "money refunded in wallet"
+
+msgctxt "Languages::refunded_wallet_money"
+msgid "Refunded Wallet Money"
+msgstr "Refunded Wallet Money"
+
+msgctxt "Languages::add_wallet_money"
+msgid "Add Wallet Money"
+msgstr "Add Wallet Money"
+
+msgctxt "Languages::credit_search"
+msgid "Credit Search"
+msgstr "Credit Search"
+
+msgctxt "Languages::credit_type"
+msgid "Credit Type"
+msgstr "Credit Type"
+
+msgctxt "Languages::reference_id"
+msgid "Reference id"
+msgstr "Reference id"
+
+msgctxt "Languages::debit_search"
+msgid "Debit Search"
+msgstr "Debit Search"
+
+msgctxt "Languages::user_email"
+msgid "User Email"
+msgstr "User Email"
+
+msgctxt "Languages::credit_id"
+msgid "Credit id"
+msgstr "Credit id"
+
+msgctxt "Languages::credit_amount"
+msgid "Credit Amount"
+msgstr "Credit Amount"
+
+msgctxt "Languages::total_amount"
+msgid "Total Amount"
+msgstr "Total Amount"
+
+msgctxt "Languages::date"
+msgid "Date"
+msgstr "Date"
+
+msgctxt "Languages::timestamp"
+msgid "Date"
+msgstr "Date"
+
+msgctxt "Languages::wallet_credit_log"
+msgid "Wallet Credit Log"
+msgstr "Wallet Credit Log"
+
+msgctxt "Languages::debit_id"
+msgid "Debit id"
+msgstr "Debit id"
+
+msgctxt "Languages::debit_amount"
+msgid "Debit Amount"
+msgstr "Debit Amount"
+
+msgctxt "Languages::remain_amount"
+msgid "Remaining Amount"
+msgstr "Remaining Amount"
+
+msgctxt "Languages::wallet_debit_log"
+msgid "Wallet Debit Log"
+msgstr "Wallet Debit Log"
+
+msgctxt "Languages::my_wallet"
+msgid "My Wallet"
+msgstr "My Wallet"
+
+msgctxt "Languages::enter_amount"
+msgid "Enter Amount "
+msgstr "Enter Amount "
+
+msgctxt "Languages::add_money"
+msgid "Add Money"
+msgstr "Add Money"
+
+msgctxt "Languages::view_debit_history"
+msgid "View Debit History"
+msgstr "View Debit History"
+
+msgctxt "Languages::view_credit_history"
+msgid "View Credit History"
+msgstr "View Credit History"
+
+msgctxt "Languages::wallet_recharge_can_not_done_with_wallet_payment_method"
+msgid "Wallet Recharge can not done with wallet, Please Choose another Payment Method"
+msgstr "Wallet Recharge can not done with wallet, Please Choose another Payment Method"
+
+msgctxt "Languages::sorry_you_have_not_enough_wallet_cash_please_try_another_payment_method_or_recharge_first"
+msgid "Sorry, you have not enough wallet cash, Please try another payment method or Recharge first"
+msgstr "Sorry, you have not enough wallet cash, Please try another payment method or Recharge first"
+
+msgctxt "Languages::click_here_to_recharge"
+msgid "Click Here to Recharge"
+msgstr "Click Here to Recharge"
+
+msgctxt "Languages::required_add_wallet_amount"
+msgid "Required wallet amount"
+msgstr "Required wallet amount"
+
+msgctxt "Languages::wallet_money"
+msgid "Wallet Money"
+msgstr "Wallet Money"
+
+msgctxt "Languages::paid_amount"
+msgid "Paid Amount"
+msgstr "Paid Amount"
+
+msgctxt "Languages::remain_wallet_amount"
+msgid "Remaining Wallet Amount"
+msgstr "Remaining Wallet Amount"
+
+msgctxt "Languages::order_status"
+msgid "Order Status"
+msgstr "Order Status"
+
+msgctxt "Languages::wallet_recharge_can_initiated_please_choose_other_payment_method"
+msgid "Wallet recharge can not initiated, please choose another payment method"
+msgstr "Wallet recharge can not initiated, please choose another payment method"
+
+msgctxt "Languages::payment_has_been_created_remain_amount_"
+msgid "Payment has been created ,  remaining amount  "
+msgstr "Payment has been created ,  remaining amount  "
+
+msgctxt "Languages::success_transection"
+msgid "Wallet Transaction"
+msgstr "Wallet Transaction"
+
+msgctxt "Languages::you_have_not_enough_cash_please_rechagege_your_wallet_or_choose_another_payment_method"
+msgid "You have not enough cash , Please recharge wallet or choose another payment method"
+msgstr "You have not enough cash , Please recharge wallet or choose another payment method"
+
+msgctxt "Languages::credit_history"
+msgid "Credit History"
+msgstr "Credit History"
+
+msgctxt "Languages::debit_history"
+msgid "Debit History"
+msgstr "Debit History"
+
+msgctxt "Languages::wallet_credit_history"
+msgid "Wallet Credit History"
+msgstr "Wallet Credit History"
+
+msgctxt "Languages::wallet_debit_history"
+msgid "Wallet Debit History"
+msgstr "Wallet Debit History"
+
+msgctxt "Languages::ammount_has_been_refunded_in_user_wallet"
+msgid "Amount has been refunded in user wallet"
+msgstr "Amount has been refunded in user wallet"
+
+msgctxt "Languages::your_wallet_credited_with_amount"
+msgid "Wallet is credited with amount "
+msgstr "Wallet is credited with amount "
+
+msgctxt "Languages::regardeing_return_request_no"
+msgid " regarding return request no "
+msgstr " regarding return request no "
+
+msgctxt "Languages::user_name"
+msgid "User Name"
+msgstr "User Name"
+
+msgctxt "Languages::return_id"
+msgid "Return Id"
+msgstr "Return Id"
+
+msgctxt "Languages::can_not_proceed_please_check_limit"
+msgid "Can not process, please check the amount you entered"
+msgstr "Can not process, please check the amount you entered"
+
+msgctxt "Languages::user_wallet"
+msgid "User Wallet"
+msgstr "User Wallet"
+
+msgctxt "Languages::available_wallet_cash"
+msgid "Available Wallet Cash"
+msgstr "Available Wallet Cash"
+
+msgctxt "Languages::use_wallet"
+msgid "Use Wallet"
+msgstr "Use Wallet"
+
+msgctxt "Languages::applied_wallet_cash"
+msgid "Applied Wallet Cash"
+msgstr "Applied Wallet Cash"
+
+msgctxt "Languages::wallet_cash_applied"
+msgid "Applied Wallet Cash"
+msgstr "Applied Wallet Cash"
+
+msgctxt "Languages::wallet_payment_prepaid"
+msgid "Wallet Payment(Prepaid)"
+msgstr "Wallet Payment(Prepaid)"
+
+msgctxt "Languages::make_a_refund"
+msgid "Make A Payment"
+msgstr "Make A Payment"
+
+msgctxt "Languages::wallet_payment"
+msgid "Wallet Payment"
+msgstr "Wallet Payment"
+
+msgctxt "Languages::remain_amount"
+msgid "Remaining Amount"
+msgstr "Remaining Amount"
+
+msgctxt "Languages::can_not_refunded"
+msgid "Money Can't Be Refunded"
+msgstr "Money Can't Be Refunded"
+
+msgctxt "Languages::remain_unrefunded_amount_regarding_this_order_is"
+msgid "Remaining unrefunded amount regarding this order is : "
+msgstr "Remaining unrefunded amount regarding this order is : "
+
+msgctxt "Languages::wallet_payment_prepaid"
+msgid "Wallet Payment(Prepaid)"
+msgstr "Wallet Payment(Prepaid)"
+
+msgctxt "Languages::wallet_transfer"
+msgid "Wallet Money Transfer"
+msgstr "Wallet Money Transfer"
+
+msgctxt "Languages::transfer_wallet_cash"
+msgid "Wallet Money Transfer"
+msgstr "Wallet Money Transfer"
+
+msgctxt "Languages::please_insert_only_numeric_value"
+msgid "Please insert numeric value only"
+msgstr "Please insert numeric value only"
+
+msgctxt "Languages::amount_error"
+msgid "Amount Error"
+msgstr "Amount Error"
+
+msgctxt "Languages::transfer_limit_is"
+msgid "Transfer Limit is "
+msgstr "Transfer Limit is "
+
+msgctxt "Languages::user_not_exist"
+msgid "User Not Exist"
+msgstr "User Not Exist"
+
+msgctxt "Languages::email_user_not_found_at_store"
+msgid "Email is not register with us."
+msgstr "Email is not register with us."
+
+msgctxt "Languages::transfer_completed_successfully"
+msgid "Transaction completed successfully"
+msgstr "Transaction completed successfully"
+
+msgctxt "Languages::reciever"
+msgid "Receiver"
+msgstr "Receiver"
+
+msgctxt "Languages::transfer"
+msgid "Transfer"
+msgstr "Transfer"
+
+msgctxt "Languages::_to_"
+msgid " to "
+msgstr " to "
+
+msgctxt "Languages::credit_debit_id"
+msgid "Credit / Debit Id"
+msgstr "Credit / Debit Id"
+
+msgctxt "Languages::wallet_transactions"
+msgid "Wallet Transaction"
+msgstr "Wallet Transaction"
+
+msgctxt "Languages::wallet_transaction"
+msgid "Wallet Transaction"
+msgstr "Wallet Transaction"
+
+msgctxt "Languages::credit"
+msgid "Credit"
+msgstr "Credit"
+
+msgctxt "Languages::total_cash"
+msgid "Total Cash"
+msgstr "Total Cash"
+
+msgctxt "Languages::wallet_users"
+msgid "Wallet Users"
+msgstr "Wallet Users"
+
+msgctxt "Languages::gross_credit_total"
+msgid "Gross Credit Total"
+msgstr "Gross Credit Total"
+
+msgctxt "Languages::gross_debit_total"
+msgid "Gross Debit Total"
+msgstr "Gross Debit Total"
+
+msgctxt "Languages::gross_wallet_cash"
+msgid "Gross Wallet Cash"
+msgstr "Gross Wallet Cash"
+
+msgctxt "Languages::transaction_search"
+msgid "Transaction Search"
+msgstr "Transaction Search"
+
+msgctxt "Languages::wallet_id"
+msgid "Wallet Id"
+msgstr "Wallet Id"
+
+msgctxt "Languages::total_credit"
+msgid "Total Credit"
+msgstr "Total Credit"
+
+msgctxt "Languages::total_debit"
+msgid "Total Debit"
+msgstr "Total Debit"
+
+msgctxt "Languages::current_cash"
+msgid "Current Cash"
+msgstr "Current Cash"
+
+msgctxt "Languages::current_cash"
+msgid "Current Cash"
+msgstr "Current Cash"
+
+msgctxt "Languages::bytransfer"
+msgid "By Transfer"
+msgstr "By Transfer"
+
+msgctxt "Languages::can_not_transfer_to_own_email"
+msgid "You can not transfer the money to your own account."
+msgstr "You can not transfer the money to your own account."
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::new_registration_amount"
+msgid "Cash back Amount of Wallet when a new User gets registered"
+msgstr "Cash back Amount of Wallet when a new User gets registered"
+
+msgctxt "SettingsOptions::pdrmgh_cscart_wallet::new_registration_cash_back"
+msgid "Allow cash back in wallet for new user registration"
+msgstr "Allow cash back in wallet for new user registration"
+
+msgctxt "Languages::un_paid_amount"
+msgid "Remaining Unpaid Amount"
+msgstr "Remaining Unpaid Amount"
+
+msgctxt "Languages::amount_has_been_debited_from_user_wallet"
+msgid "Amount has been debited from user wallet successfully"
+msgstr "Amount has been debited from user wallet successfully"
+
+msgctxt "Languages::amount_has_been_credited_in_user_wallet"
+msgid "Amount has been credited in user wallet successfully"
+msgstr "Amount has been credited in user wallet successfully"
+
+msgctxt "Languages::please_fill_all_fields"
+msgid "Please fill all fields"
+msgstr "Please fill all fields"
+
+msgctxt "Languages::wallet_credit"
+msgid "Wallet Credit"
+msgstr "Wallet Credit"
+
+msgctxt "Languages::wallet_debit"
+msgid "Wallet Debit"
+msgstr "Wallet Debit"
+
+msgctxt "Languages::promotion_bonus_wallet_cash_back"
+msgid "Wallet Cash Back"
+msgstr "Wallet Cash Back"
+
+msgctxt "Languages::total_refunded_amount"
+msgid "Total Refunded Amount"
+msgstr "Total Refunded Amount"
+
+msgctxt "Languages::amount_is_zero"
+msgid "Amount cannot be debited from user wallet due to insuffiecient balance"
+msgstr "Amount cannot be debited from user wallet due to insuffiecient balance"
+
+msgctxt "Languages::wallet_dabit_credit"
+msgid "Wallet debit credit"
+msgstr "Wallet Credit/Debit"
+
+msgctxt "Languages::email_template.wallet_debit"
+msgid "Wk Wallet Debit"
+msgstr "Wk Wallet Debit"
+
+msgctxt "Languages::email_template.wallet_credit"
+msgid "Wk Wallet Credit"
+msgstr "Wk Wallet Credit"
+
+msgctxt "Languages::credit_by_admin"
+msgid "Credit by admin"
+msgstr "Credit by admin"
+
+msgctxt "Languages::new_registration"
+msgid "New registration"
+msgstr "New registration"
+
+msgctxt "Languages::debit_by_admin"
+msgid "Debit by admin"
+msgstr "Debit by admin"
+
+msgctxt "Languages::cash_back"
+msgid "Cash back"
+msgstr "Cash back"
+
+msgctxt "Languages::order_edit"
+msgid "Order edit"
+msgstr "Order edit"
+
+msgctxt "Languages::refund_rma"
+msgid "Refund RMA"
+msgstr "Refund RMA"
+
+msgctxt "Languages::amount_cannot_be_greater"
+msgid "Amount Cannot be greater than available wallet cash of customer"
+msgstr "Amount Cannot be greater than available wallet cash of customer"
+
+msgctxt "Languages::refund_order"
+msgid "Refund Order"
+msgstr "Refund Order"
+
+msgctxt "Languages::_block_lite_checkout_pdrmgh_cscart_wallet"
+msgid "Wallet"
+msgstr "Wallet"
+
+msgctxt "Languages::block_lite_checkout_pdrmgh_cscart_wallet"
+msgid "Wallet"
+msgstr "Wallet"
+
+msgctxt "Languages::lite_checkout_pdrmgh_cscart_wallet"
+msgid "Wallet"
+msgstr "Wallet"
+
+msgctxt "Languages::your_current_cash_less_than_order_total"
+msgid "Your Wallet Cash is less than order total"
+msgstr "Your Wallet Cash is less than order total"
+
+msgctxt "Languages::can_not_create_gift_certificate_for_partial_amount"
+msgid "Cannot create gift certificate for partial amount"
+msgstr "Cannot create gift certificate for partial amount"
+
+msgctxt "Languages::refund_shipping_cost"
+msgid "Refund Shipping Amount"
+msgstr "Refund Shipping Amount"

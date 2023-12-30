@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>pdrmgh_cscart_wallet</id>
+    <name>pdrmgh_cscart_wallet</name>
+    <version>4.4</version>
+    <priority>222</priority>
+    <position>10</position>
+    <status>active</status>
+	<has_icon>Y</has_icon>
+	<supplier>pdrmgh</supplier>
+	 
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <functions>
+        <item for="install">fn_pdrmgh_cscart_wallet_install</item>
+    </functions>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+          <section id="general">
+            <items>
+                <item id="new_registration_cash_back">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                </item>
+                <item id="new_registration_amount">
+                          <type>input</type>
+                </item> 
+              </items>
+          </section>
+            <section id="wallet_refund_limit">
+                <items>
+                    <item id="wallet_user_refund_header">
+                        <type>header</type>
+                    </item> 
+                    <item id="min_refund_amount">
+                        <type>input</type>
+                        <default_value>10</default_value>
+                    </item>
+                    <item id="max_refund_amount">
+                        <type>input</type>
+                        <default_value>1500</default_value>
+                    </item>                 
+                </items>
+            </section>
+            <section id="wallet_recharge_limit">
+                <items>
+                    <item id="wallet_user_recharge_header">
+                        <type>header</type>
+                    </item> 
+                    <item id="min_recharge_amount">
+                        <type>input</type>
+                        <default_value>10</default_value>
+                    </item>
+                    <item id="max_recharge_amount">
+                        <type>input</type>
+                        <default_value>15000</default_value>
+                    </item>                  
+                </items>
+            </section>
+             <section id="wallet_transfer">
+                <items>
+                    <item id="wallet_user_transfer_header">
+                        <type>header</type>
+                    </item> 
+                    <item id="status_wallet_transfer">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="min_transfer_amount">
+                        <type>input</type>
+                        <default_value>100</default_value>
+                    </item>
+                    <item id="max_transfer_amount">
+                        <type>input</type>
+                        <default_value>1500</default_value>
+                    </item>                
+                </items>
+            </section>
+        </sections>
+    </settings>  
+    <queries>
+        <item for="install">DROP TABLE IF EXISTS ?:wallet_cash;</item>
+        <item for="install">DROP TABLE IF EXISTS ?:wallet_debit_log;</item>
+        <item for="install">DROP TABLE IF EXISTS ?:wallet_credit_log;</item>
+        <item for="install">DROP TABLE IF EXISTS ?:wallet_offline_payment;</item>
+        <item>
+
+            CREATE TABLE IF NOT EXISTS `?:wallet_cash` (
+              `wallet_id` mediumint(8) NOT NULL AUTO_INCREMENT,
+              `user_id` mediumint(8) NOT NULL,
+              `total_cash` decimal(10,2) NOT NULL,
+              `company_id` mediumint(8) NOT NULL,
+              PRIMARY KEY (`wallet_id`)
+            ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
+            
+        </item>
+        <item>
+
+            CREATE TABLE IF NOT EXISTS `?:wallet_credit_log` (
+              `credit_id` mediumint(8) NOT NULL AUTO_INCREMENT,
+              `source` varchar(100) NOT NULL,
+              `source_id` mediumint(8) NOT NULL,
+              `credit_amount` decimal(10,2) NOT NULL,
+              `total_amount` decimal(10,2) NOT NULL,
+              `wallet_id` mediumint(8) NOT NULL,
+              `timestamp` varchar(20) NOT NULL,
+              `refund_reason` text NOT NULL,
+              `extra_info` varchar(999) NOT NULL,
+              `company_id` mediumint(8) NOT NULL,
+              PRIMARY KEY (`credit_id`)
+            ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
+
+        </item>
+        <item>
+
+            CREATE TABLE IF NOT EXISTS `?:wallet_debit_log` (
+              `debit_id` mediumint(8) NOT NULL AUTO_INCREMENT,
+              `wallet_id` mediumint(8) NOT NULL,
+              `debit_amount` decimal(10,2) NOT NULL,
+              `remain_amount` decimal(10,2) NOT NULL,
+              `order_id` mediumint(8) NOT NULL,
+              `timestamp` varchar(20) NOT NULL,
+              `area` char(1) NOT NULL,
+               `debit_reason` text DEFAULT '',
+               `source` text DEFAULT '',
+               `extra_info` varchar(999) NOT NULL,
+               `company_id` mediumint(8) NOT NULL,
+              PRIMARY KEY (`debit_id`)
+            ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
+
+        </item>
+
+        <item>
+          CREATE TABLE IF NOT EXISTS `?:wallet_offline_payment` (
+            `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+            `wallet_id` mediumint(8) NOT NULL,
+            `order_id` mediumint(8) NOT NULL,
+            `status` char(3) NOT NULL DEFAULT 'no',
+            PRIMARY KEY (`id`)
+          ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
+        </item>
+        <item>
+            CREATE TABLE IF NOT EXISTS `?:wallet_transaction` (
+              `transaction_id` int(11) NOT NULL AUTO_INCREMENT,
+              `credit_id` int(11) NOT NULL,
+              `debit_id` int(11) NOT NULL,
+              `wallet_id` int(11) NOT NULL,
+              `timestamp` varchar(10) NOT NULL,
+              PRIMARY KEY (`transaction_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci AUTO_INCREMENT=1 ;
+        </item>
+
+         <item>ALTER TABLE `?:orders` ADD `wallet_refunded_amount` decimal(11,2) NOT NULL DEFAULT '0.00'</item>
+         <item>ALTER TABLE `?:orders` ADD `pay_by_wallet_amount` decimal(11,2) NOT NULL DEFAULT '0.00'</item>
+        <item for="uninstall">ALTER TABLE  `?:orders` DROP `wallet_refunded_amount`</item>
+         <item for="uninstall">ALTER TABLE  `?:orders` DROP `pay_by_wallet_amount`</item>
+        
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wallet_cash;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wallet_transaction;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wallet_credit_log;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wallet_debit_log;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wallet_offline_payment;</item>
+    </queries>
+    <email_templates>
+        <templates>
+            <item>
+                <code><![CDATA[wallet_credit]]></code>
+                <area><![CDATA[C]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ company_name }}: {{ __("wallet_credit_details") }}]]></default_subject>
+                <default_template><![CDATA[{{ snippet("header") }}      
+                    {{ __("dear") }} {{ wallet_data.user_name }},<br /><br />
+
+                    {{ __("your_wallet_credited_with_amount") }} {{ wallet_data.amount }} <br /><br />
+                    {% if wallet_data.source == 'refund_rma' %}
+
+                    {{ __("regardeing_return_request_no") }} {{ wallet_data.source_id }}<br />   
+                    <strong>{{ __("credit_source") }}</strong> : {{ __("refund") }}<br />
+                    {% endif %}
+                    {% if wallet_data.source == 'recharge' %}
+
+                    {{ __("regardeing_order_no") }} {{ wallet_data.source_id }}<br />   
+                    <strong>{{ __("credit_source") }}</strong> : {{ __("recharge") }}<br />
+                    {% endif %}
+                    <strong>{{ __("credit_wallet_amount") }}</strong> : {{ wallet_data.amount }}<br />
+                    <strong>{{ __("total_wallet_amount") }}</strong> : {{ wallet_data.total_cash }}<br />
+
+                    {{ snippet("footer") }}]]>
+                </default_template>
+                <addon><![CDATA[pdrmgh_cscart_wallet]]></addon>
+            </item>
+       
+            <item>
+                <code><![CDATA[wallet_debit]]></code>
+                <area><![CDATA[C]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ company_name }}: {{ __("wallet_debit_details") }}]]></default_subject>
+                <default_template><![CDATA[{{ snippet("header") }}
+                    {{ __("dear") }} {{ wallet_data.user_name }},<br /><br />
+
+                    {{ __("your_wallet_debited_with_amount") }} {{ wallet_data.amount }}<br /><br />
+                    {% if wallet_data.order_id %}
+
+                    {{ __("regardeing_order_no") }} {{ wallet_data.order_id }}<br />   
+
+                    {% endif %}
+                    <strong>{{ __("debit_wallet_amount") }}</strong> : {{ wallet_data.amount }} <br />
+                    <strong>{{ __("total_wallet_amount") }}</strong> : {{ wallet_data.total_cash }} <br />
+                    {{ snippet("footer") }}]]>
+                </default_template>
+                <addon><![CDATA[pdrmgh_cscart_wallet]]></addon>
+            </item>
+        </templates>
+    </email_templates>
+</addon>
